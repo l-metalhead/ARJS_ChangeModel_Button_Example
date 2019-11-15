@@ -13,7 +13,8 @@ AFRAME.registerComponent('my-event', {
 
       btnRight.addEventListener('click', function() {
         model.setAttribute('material', 'color: green');
-        model.setAttribute('geometry', 'primitive: sphere');
+        //model.setAttribute('geometry', 'primitive: sphere');
+        model.setAttribute('gltf-model', '#loadModel');
       });
     }
 
