@@ -15,25 +15,31 @@
 <body>
 
 
-    <a-scene embedded arjs>
+    <a-scene>
         <a-assets>
             <!--
             <a-asset-item id="loadModel" response-type='arraybuffer' src="assets/home/chest/scene.gltf"></a-asset-item>
             -->
             <a-asset-item id="loadModel" response-type='arraybuffer' src="https://cdn.glitch.com/219c062b-6944-4023-a47c-fe1601aa9d78%2Fscene.gltf?v=1573939971811"></a-asset-item>
         </a-assets>
+        
+        <a-entity gltf-model="#loadModel">
 
+        <!--
         <a-marker preset='hiro' my-event emitevents="true" cursor="rayOrigin: mouse">
             <!--
             <a-plane id="btnLeft" material="color: yellow;" position="-1.5 0 -1.5" rotation="-90 0 0"></a-plane>
             <a-entity id="model"></a-entity>
             <a-plane id="btnRight" material="color: orange;" position="1.5 0 -1.5" rotation="-90 0 0"></a-plane>
-            -->
+            -/->
             
             <a-entity gltf-model="#loadModel">
         </a-marker>
+        -->
 
+        <!--
         <a-camera></a-camera>
+        -->
     </a-scene>
 
 
